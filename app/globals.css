@@ -3,30 +3,30 @@
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 
 :root {
-  --background: #06101a;
-  --foreground: #f8fafc;
-  --card: #08131f;
+  --background: #0a0c10;
+  --foreground: #f4f1ea;
+  --card: #0f1218;
   --card-foreground: #f8fafc;
-  --popover: #08131f;
+  --popover: #0f1218;
   --popover-foreground: #f8fafc;
-  --primary: #22d3ee;
-  --primary-foreground: #06101a;
-  --secondary: #0d1c2b;
+  --primary: #6e8dff;
+  --primary-foreground: #080a0e;
+  --secondary: #151922;
   --secondary-foreground: #e2e8f0;
-  --muted: #0d1c2b;
+  --muted: #151922;
   --muted-foreground: #64748b;
-  --accent: #0e7490;
-  --accent-foreground: #ecfeff;
+  --accent: #6e8dff;
+  --accent-foreground: #f4f1ea;
   --destructive: #fb7185;
   --border: #ffffff14;
   --input: #ffffff1f;
-  --ring: #22d3ee;
-  --chart-1: #22d3ee;
-  --chart-2: #38bdf8;
+  --ring: #6e8dff;
+  --chart-1: #6e8dff;
+  --chart-2: #a6b7ff;
   --chart-3: #818cf8;
   --chart-4: #a78bfa;
   --chart-5: #34d399;
-  --radius: 0.875rem;
+  --radius: 0.5rem;
 }
 
 @theme inline {
@@ -80,8 +80,8 @@ body {
 }
 
 ::selection {
-  background: #22d3ee;
-  color: #06101a;
+  background: #6e8dff;
+  color: #080a0e;
 }
 
 a,
@@ -91,7 +91,7 @@ button {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #67e8f9;
+  outline: 2px solid #8aa2ff;
   outline-offset: 4px;
 }
 
@@ -123,7 +123,7 @@ button:focus-visible {
   left: 0;
   height: 1px;
   content: "";
-  background: #67e8f9;
+  background: #6e8dff;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 180ms ease;
@@ -142,23 +142,7 @@ button:focus-visible {
   inset: 0;
   pointer-events: none;
   content: "";
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: linear-gradient(to bottom, black 10%, transparent 92%);
-}
-
-.hero-glow {
-  position: absolute;
-  top: 8%;
-  left: 54%;
-  width: min(54vw, 720px);
-  height: min(54vw, 720px);
-  pointer-events: none;
-  border-radius: 999px;
-  background: rgba(8, 145, 178, 0.14);
-  filter: blur(120px);
+  background: linear-gradient(to bottom, transparent 72%, rgba(110, 141, 255, 0.05));
 }
 
 .primary-link,
@@ -167,7 +151,7 @@ button:focus-visible {
   min-height: 3rem;
   align-items: center;
   gap: 0.65rem;
-  border-radius: 999px;
+  border-radius: 0.45rem;
   padding-inline: 1.3rem;
   font-size: 0.875rem;
   font-weight: 650;
@@ -178,13 +162,13 @@ button:focus-visible {
 }
 
 .primary-link {
-  background: #22d3ee;
-  color: #06101a;
+  background: #f4f1ea;
+  color: #0a0c10;
 }
 
 .primary-link:hover {
   transform: translateY(-2px);
-  background: #67e8f9;
+  background: #ffffff;
 }
 
 .secondary-link {
@@ -194,31 +178,18 @@ button:focus-visible {
 
 .secondary-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(103, 232, 249, 0.35);
-  background: rgba(103, 232, 249, 0.05);
-}
-
-.signal-panel {
-  background-image: linear-gradient(145deg, rgba(34, 211, 238, 0.045), transparent 45%);
-}
-
-.signal-grid {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 52px 46px;
+  border-color: rgba(110, 141, 255, 0.4);
+  background: rgba(110, 141, 255, 0.06);
 }
 
 .project-thesis {
-  background:
-    radial-gradient(circle at 15% 5%, rgba(34, 211, 238, 0.08), transparent 36%),
-    #08131f;
+  background: #0f1218;
 }
 
 .feature-card {
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 1rem;
-  background: rgba(8, 19, 31, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  background: #0f1218;
   transition:
     border-color 180ms ease,
     background-color 180ms ease,
@@ -227,12 +198,12 @@ button:focus-visible {
 
 .feature-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(34, 211, 238, 0.2);
-  background: #0a1927;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: #131720;
 }
 
 .team-card {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.025), transparent);
+  background: transparent;
   transition:
     border-color 180ms ease,
     transform 180ms ease;
@@ -240,7 +211,7 @@ button:focus-visible {
 
 .team-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(34, 211, 238, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .social-placeholder {
@@ -260,26 +231,12 @@ button:focus-visible {
   left: 2rem;
   height: 1px;
   content: "";
-  background: linear-gradient(to right, #22d3ee, rgba(34, 211, 238, 0.05));
+  background: linear-gradient(to right, #6e8dff, rgba(110, 141, 255, 0.05));
 }
 
 .cta-panel {
   position: relative;
-  background:
-    radial-gradient(circle at 50% 120%, rgba(34, 211, 238, 0.2), transparent 44%),
-    linear-gradient(145deg, #0a1c2a, #07131f 62%);
-}
-
-.cta-panel::before {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  content: "";
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(circle at center, black, transparent 75%);
+  background: #11151d;
 }
 
 .cta-panel > * {
@@ -303,13 +260,6 @@ button:focus-visible {
 @media (max-width: 640px) {
   .site-container {
     width: min(100% - 2.5rem, 1240px);
-  }
-
-  .hero-glow {
-    top: 33%;
-    left: 18%;
-    width: 85vw;
-    height: 85vw;
   }
 
   .roadmap-line::before {
@@ -336,4 +286,3 @@ button:focus-visible {
     transform: none;
   }
 }
-

@@ -9,9 +9,9 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.07] bg-[#06101a]/80 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.07] bg-[#0a0c10]/88 backdrop-blur-xl">
       <div className="site-container flex h-18 items-center justify-between">
-        <a href="#top" aria-label="Whale 홈으로 이동">
+        <a href="#top" aria-label="Whale AI 홈으로 이동">
           <WhaleWordmark compact />
         </a>
 
@@ -25,7 +25,7 @@ export function Header() {
 
         <a
           href="#project"
-          className="hidden rounded-full border border-cyan-300/30 bg-cyan-300/8 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-300/60 hover:bg-cyan-300/12 md:inline-flex"
+          className="hidden border-b border-white/20 pb-1 text-sm font-medium text-slate-300 transition hover:border-[#6e8dff] hover:text-white md:inline-flex"
         >
           What we&apos;re building
         </a>
@@ -42,7 +42,7 @@ export function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-white/[0.07] bg-[#06101a] px-5 py-5 md:hidden" aria-label="모바일 메뉴">
+        <nav className="border-t border-white/[0.07] bg-[#0a0c10] px-5 py-5 md:hidden" aria-label="모바일 메뉴">
           <div className="flex flex-col">
             {navigation.map((item) => (
               <a
@@ -60,4 +60,3 @@ export function Header() {
     </header>
   );
 }
-

@@ -2,8 +2,8 @@ import type { ProjectStatus } from "@/data/site-data";
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-5 flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[0.18em] text-cyan-300">
-      <span className="h-px w-7 bg-cyan-400" />
+    <p className="mb-5 flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[0.18em] text-[#8aa2ff]">
+      <span className="h-px w-7 bg-[#6e8dff]" />
       {children}
     </p>
   );
@@ -35,7 +35,7 @@ export function SectionHeading({
 
 const statusStyles: Record<ProjectStatus, string> = {
   Completed: "border-emerald-400/25 bg-emerald-400/8 text-emerald-300",
-  "In Development": "border-cyan-400/25 bg-cyan-400/8 text-cyan-200",
+  "In Development": "border-[#6e8dff]/30 bg-[#6e8dff]/8 text-[#a6b7ff]",
   Researching: "border-violet-400/25 bg-violet-400/8 text-violet-300",
   Planned: "border-slate-400/20 bg-slate-400/8 text-slate-400",
 };
@@ -50,4 +50,3 @@ export function StatusBadge({ status }: { status: ProjectStatus }) {
     </span>
   );
 }
-

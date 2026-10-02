@@ -3,26 +3,26 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Whale — Build. Test. Learn. Scale.",
-    template: "%s | Whale",
+    default: "Whale AI — 생각한 것을 끝까지 만듭니다.",
+    template: "%s | Whale AI",
   },
   description:
-    "Whale은 AI와 소프트웨어를 활용해 실제 사용 가능한 서비스를 기획하고, 개발하고, 배포하는 제품 팀입니다.",
-  keywords: ["Whale", "AI", "Product Team", "Investment Agent", "Fintech", "Software"],
-  authors: [{ name: "Whale" }],
-  creator: "Whale",
+    "Whale AI는 AI와 소프트웨어를 활용해 실제 사용 가능한 서비스를 기획하고, 개발하고, 배포하는 제품 팀입니다.",
+  keywords: ["Whale AI", "AI", "Product Team", "Investment Agent", "Fintech", "Software"],
+  authors: [{ name: "Whale AI" }],
+  creator: "Whale AI",
   metadataBase: new URL("https://whale-ai-product-team.b2hg6wj4sd.chatgpt.site"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Whale — Build. Test. Learn. Scale.",
+    title: "Whale AI — 생각한 것을 끝까지 만듭니다.",
     description: "AI와 소프트웨어로 아이디어를 실제 제품으로 만드는 팀.",
     type: "website",
     locale: "ko_KR",
-    siteName: "Whale",
+    siteName: "Whale AI",
   },
   twitter: {
     card: "summary",
-    title: "Whale — Build. Test. Learn. Scale.",
+    title: "Whale AI — 생각한 것을 끝까지 만듭니다.",
     description: "AI와 소프트웨어로 아이디어를 실제 제품으로 만드는 팀.",
   },
   icons: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#06101a",
+  themeColor: "#0a0c10",
   colorScheme: "dark",
 };
 

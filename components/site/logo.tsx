@@ -7,10 +7,10 @@ export function WhaleMark({ className = "" }: { className?: string }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect width="44" height="44" rx="13" fill="#06B6D4" />
+      <rect width="44" height="44" rx="8" fill="#6E8DFF" />
       <path
         d="M9 14.5c2.5 0 4.6 1.1 6.2 3.4 1.8-3.2 4-5 6.8-5 2.8 0 5 1.8 6.8 5 1.6-2.3 3.7-3.4 6.2-3.4-.6 6.1-4.1 9.3-9.5 9.7-.8 3.9-2 6.2-3.5 6.9-1.5-.7-2.7-3-3.5-6.9-5.4-.4-8.9-3.6-9.5-9.7Z"
-        fill="#06121D"
+        fill="#F4F1EA"
       />
     </svg>
   );
@@ -20,10 +20,9 @@ export function WhaleWordmark({ compact = false }: { compact?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2.5">
       <WhaleMark className={compact ? "h-8 w-8" : "h-9 w-9"} />
-      <span className="font-display text-lg font-semibold tracking-[0.16em] text-white">
-        WHALE
+      <span className="font-display text-lg font-semibold tracking-[-0.02em] text-white">
+        WHALE AI
       </span>
     </span>
   );
 }
-

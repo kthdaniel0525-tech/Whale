@@ -1,6 +1,4 @@
 import {
-  ArrowDown,
-  ArrowUpRight,
   Bot,
   Box,
   BriefcaseBusiness,
@@ -19,7 +17,6 @@ import {
 import { FadeIn } from "@/components/site/fade-in";
 import { Header } from "@/components/site/header";
 import { WhaleMark, WhaleWordmark } from "@/components/site/logo";
-import { MarketSignal } from "@/components/site/market-signal";
 import { Eyebrow, SectionHeading, StatusBadge } from "@/components/site/ui";
 import {
   buildSteps,
@@ -50,30 +47,29 @@ export default function Home() {
     <main id="top" className="overflow-hidden">
       <Header />
 
-      <section className="hero-section relative min-h-[880px] pb-20 pt-32 sm:min-h-screen sm:pt-40">
-        <div className="hero-glow" />
-        <div className="site-container relative z-10 grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12">
+      <section className="hero-section relative min-h-[820px] pb-20 pt-32 sm:min-h-screen sm:pt-40">
+        <div className="site-container relative z-10 grid items-end gap-16 lg:grid-cols-[1.18fr_0.82fr] lg:gap-20">
           <div>
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-slate-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_12px_#67e8f9]" />
-              Independent AI Product Team
-            </div>
-            <h1 className="font-display text-[clamp(4.75rem,12vw,9.25rem)] font-semibold leading-[0.78] tracking-[-0.07em] text-white">
+            <p className="mb-8 font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
+              Independent Product Team
+            </p>
+            <h1 className="font-display text-[clamp(4.5rem,11.5vw,9rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-white">
               WHALE
-            </h1>
-            <p className="mt-8 max-w-xl font-display text-3xl font-medium leading-tight tracking-[-0.035em] text-slate-100 sm:text-5xl">
-              Build. Test.
               <br />
-              Learn. <span className="text-cyan-300">Scale.</span>
+              <span className="text-[#6e8dff]">AI</span>
+            </h1>
+            <p className="mt-10 max-w-xl font-display text-3xl font-medium leading-tight tracking-[-0.035em] text-slate-100 sm:text-5xl">
+              생각한 것을,
+              <br />
+              끝까지 만듭니다.
             </p>
             <p className="mt-7 max-w-xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
-              Whale은 AI와 소프트웨어로 아이디어를 실제 사람들이 사용할 수 있는 제품으로 만듭니다.
+              Whale AI는 AI와 소프트웨어로 아이디어를 실제 사람들이 사용할 수 있는 제품으로 만듭니다.
               기획에서 배포까지, 직접 만들고 검증하며 앞으로 나아갑니다.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#project" className="primary-link justify-center sm:justify-start">
                 Explore our work
-                <ArrowDown size={16} />
               </a>
               <a href="#team" className="secondary-link justify-center sm:justify-start">
                 Meet the team
@@ -82,14 +78,37 @@ export default function Home() {
           </div>
 
           <FadeIn delay={120}>
-            <MarketSignal />
+            <aside className="current-work border-t border-white/20 pt-5">
+              <div className="flex items-center justify-between gap-4">
+                <p className="font-mono text-xs uppercase tracking-[0.16em] text-slate-500">Current work · 001</p>
+                <span className="font-mono text-xs text-[#8aa2ff]">In development</span>
+              </div>
+              <h2 className="mt-10 font-display text-4xl font-semibold leading-tight tracking-[-0.04em] text-white sm:text-5xl">
+                AI Investment
+                <br />
+                Agent
+              </h2>
+              <p className="mt-6 max-w-md text-base leading-7 text-slate-400">
+                시장 데이터와 기업 정보, 뉴스와 거시경제 지표를 한 흐름에서 분석하는 투자 리서치 도구를 만들고 있습니다.
+              </p>
+              <dl className="mt-10 grid grid-cols-2 gap-x-8 gap-y-5 border-t border-white/10 pt-5 text-sm">
+                <div>
+                  <dt className="text-slate-600">Focus</dt>
+                  <dd className="mt-1 text-slate-300">Research workflow</dd>
+                </div>
+                <div>
+                  <dt className="text-slate-600">Stage</dt>
+                  <dd className="mt-1 text-slate-300">MVP development</dd>
+                </div>
+              </dl>
+            </aside>
           </FadeIn>
         </div>
 
         <div className="site-container relative z-10 mt-16 flex items-center gap-4 text-xs text-slate-600 lg:mt-24">
           <span className="font-mono uppercase tracking-[0.15em]">Scroll to explore</span>
           <span className="h-px flex-1 bg-gradient-to-r from-white/15 to-transparent" />
-          <span className="font-mono text-cyan-300/60">01 / 09</span>
+          <span className="font-mono text-[#6e8dff]">01 / 09</span>
         </div>
       </section>
 
@@ -98,7 +117,7 @@ export default function Home() {
           <FadeIn>
             <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24">
               <div>
-                <Eyebrow>About Whale</Eyebrow>
+                <Eyebrow>About Whale AI</Eyebrow>
                 <p className="font-mono text-xs leading-6 text-slate-600">EST. BY BUILDING</p>
               </div>
               <div>
@@ -109,7 +128,7 @@ export default function Home() {
                 </h2>
                 <div className="mt-10 grid gap-7 text-base leading-7 text-slate-400 sm:grid-cols-2">
                   <p>
-                    Whale은 AI로 무엇을 할 수 있는지 말하는 데서 출발하지 않았습니다. 작지만
+                    Whale AI는 AI로 무엇을 할 수 있는지 말하는 데서 출발하지 않았습니다. 작지만
                     유용한 아이디어를 실제 서비스로 만드는 과정이 궁금해서 시작했습니다.
                   </p>
                   <p>
@@ -123,7 +142,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-pad bg-[#08131f]">
+      <section className="section-pad bg-[#0f1218]">
         <div className="site-container">
           <FadeIn>
             <SectionHeading
@@ -137,9 +156,9 @@ export default function Home() {
               const Icon = icons[mission.icon as keyof typeof icons];
               return (
                 <FadeIn key={mission.title} delay={index * 80}>
-                  <article className="group h-full rounded-2xl border border-white/[0.07] bg-white/[0.025] p-7 transition hover:-translate-y-1 hover:border-cyan-300/20 hover:bg-cyan-300/[0.025] sm:p-8">
+                  <article className="group h-full rounded-xl border border-white/[0.08] bg-transparent p-7 transition hover:-translate-y-1 hover:border-white/20 sm:p-8">
                     <div className="flex items-start justify-between">
-                      <span className="grid h-11 w-11 place-items-center rounded-xl border border-cyan-300/15 bg-cyan-300/[0.06] text-cyan-300">
+                      <span className="grid h-11 w-11 place-items-center rounded-lg border border-white/10 text-[#8aa2ff]">
                         <Icon size={20} />
                       </span>
                       <span className="font-mono text-xs text-slate-700">{mission.number}</span>
@@ -172,9 +191,9 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn>
-            <div className="project-thesis mt-12 grid overflow-hidden rounded-3xl border border-white/[0.08] lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="project-thesis mt-12 grid overflow-hidden rounded-xl border border-white/[0.09] lg:grid-cols-[1.15fr_0.85fr]">
               <div className="p-7 sm:p-10 lg:p-12">
-                <p className="font-mono text-xs uppercase tracking-[0.16em] text-cyan-300">The thesis</p>
+                <p className="font-mono text-xs uppercase tracking-[0.16em] text-[#8aa2ff]">The thesis</p>
                 <p className="mt-6 max-w-2xl font-display text-3xl font-medium leading-[1.3] tracking-[-0.03em] text-white sm:text-4xl">
                   데이터는 흩어져 있습니다.
                   <br />
@@ -201,7 +220,7 @@ export default function Home() {
                 <FadeIn key={feature.title} delay={(index % 4) * 55}>
                   <article className="feature-card h-full p-5 sm:p-6">
                     <div className="flex items-center justify-between">
-                      <Icon size={19} className="text-cyan-300" />
+                      <Icon size={19} className="text-[#8aa2ff]" />
                       <StatusBadge status={feature.status} />
                     </div>
                     <h3 className="mt-10 font-display text-lg font-semibold tracking-[-0.02em] text-white">
@@ -216,7 +235,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-pad bg-[#08131f]">
+      <section className="section-pad bg-[#0f1218]">
         <div className="site-container">
           <FadeIn>
             <SectionHeading
@@ -225,11 +244,11 @@ export default function Home() {
               description="각 단계는 끝이 아니라 다음 실험을 더 잘 설계하기 위한 입력입니다."
             />
           </FadeIn>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.07] sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-px overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.08] sm:grid-cols-2 lg:grid-cols-4">
             {buildSteps.map((item, index) => (
               <FadeIn key={item.step} delay={(index % 4) * 50} className="h-full">
-                <div className="group relative h-full min-h-52 bg-[#08131f] p-6 transition hover:bg-[#0a1927]">
-                  <span className="font-mono text-xs text-cyan-300/70">{item.step}</span>
+                <div className="group relative h-full min-h-52 bg-[#0f1218] p-6 transition hover:bg-[#131720]">
+                  <span className="font-mono text-xs text-[#8aa2ff]">{item.step}</span>
                   {index < buildSteps.length - 1 && (
                     <span className="absolute right-5 top-5 hidden text-slate-700 lg:block">↘</span>
                   )}
@@ -258,7 +277,7 @@ export default function Home() {
               <div className="border-t border-white/[0.08]">
                 {updates.map((update) => (
                   <article key={update.date} className="grid gap-4 border-b border-white/[0.08] py-7 sm:grid-cols-[70px_1fr_auto] sm:gap-6">
-                    <span className="font-mono text-xs tracking-[0.12em] text-cyan-300/70">{update.date}</span>
+                    <span className="font-mono text-xs tracking-[0.12em] text-[#8aa2ff]">{update.date}</span>
                     <div>
                       <h3 className="font-display text-xl font-semibold tracking-[-0.02em] text-white">{update.title}</h3>
                       <p className="mt-2 max-w-xl text-sm leading-6 text-slate-500">{update.description}</p>
@@ -274,7 +293,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="team" className="section-pad bg-[#08131f]">
+      <section id="team" className="section-pad bg-[#0f1218]">
         <div className="site-container">
           <FadeIn>
             <SectionHeading
@@ -286,9 +305,9 @@ export default function Home() {
           <div className="mt-14 grid gap-4 lg:grid-cols-3">
             {teamMembers.map((member, index) => (
               <FadeIn key={member.name} delay={index * 70}>
-                <article className="team-card h-full rounded-2xl border border-white/[0.07] p-7 sm:p-8">
+                <article className="team-card h-full rounded-xl border border-white/[0.08] p-7 sm:p-8">
                   <div className="flex items-start justify-between">
-                    <div className="grid h-14 w-14 place-items-center rounded-2xl border border-cyan-300/15 bg-cyan-300/[0.06] font-display text-lg font-semibold text-cyan-200">
+                    <div className="grid h-14 w-14 place-items-center rounded-lg border border-white/10 font-display text-lg font-semibold text-[#a6b7ff]">
                       {String(index + 1).padStart(2, "0")}
                     </div>
                     <div className="flex gap-2">
@@ -301,7 +320,7 @@ export default function Home() {
                     </div>
                   </div>
                   <h3 className="mt-9 font-display text-2xl font-semibold tracking-[-0.025em] text-white">{member.name}</h3>
-                  <p className="mt-2 text-sm font-medium text-cyan-300">{member.role}</p>
+                  <p className="mt-2 text-sm font-medium text-[#8aa2ff]">{member.role}</p>
                   <p className="mt-5 text-sm leading-6 text-slate-500">{member.description}</p>
                   <div className="mt-8 flex flex-wrap gap-2">
                     {member.focus.map((item) => (
@@ -312,7 +331,7 @@ export default function Home() {
               </FadeIn>
             ))}
           </div>
-          <p className="mt-5 text-sm text-slate-600">* 팀원 이름과 프로필 링크는 실제 정보로 업데이트할 예정입니다.</p>
+          <p className="mt-5 text-sm text-slate-600">* GitHub와 LinkedIn 링크는 프로필 공개 후 연결할 예정입니다.</p>
         </div>
       </section>
 
@@ -339,9 +358,9 @@ export default function Home() {
           <div className="roadmap-line relative mt-16 grid gap-4 lg:grid-cols-3">
             {roadmap.map((phase, index) => (
               <FadeIn key={phase.horizon} delay={index * 80}>
-                <article className="relative h-full rounded-2xl border border-white/[0.07] bg-[#08131f] p-7 sm:p-8">
-                  <div className="absolute -top-2 left-8 h-4 w-4 rounded-full border-[3px] border-[#06101a] bg-cyan-300 shadow-[0_0_15px_#22d3ee66]" />
-                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-cyan-300">{phase.horizon}</p>
+                <article className="relative h-full rounded-xl border border-white/[0.08] bg-[#0f1218] p-7 sm:p-8">
+                  <div className="absolute -top-1.5 left-8 h-3 w-3 rounded-full border-2 border-[#0a0c10] bg-[#6e8dff]" />
+                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#8aa2ff]">{phase.horizon}</p>
                   <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
                     <h3 className="font-display text-2xl font-semibold tracking-[-0.025em] text-white">{phase.title}</h3>
                     <StatusBadge status={phase.status} />
@@ -363,9 +382,9 @@ export default function Home() {
 
       <section className="px-4 pb-4 sm:px-6 sm:pb-6">
         <FadeIn>
-          <div className="cta-panel mx-auto max-w-[1400px] overflow-hidden rounded-3xl border border-cyan-300/15 px-6 py-16 text-center sm:px-12 sm:py-24">
+          <div className="cta-panel mx-auto max-w-[1400px] overflow-hidden rounded-xl border border-white/10 px-6 py-16 text-center sm:px-12 sm:py-24">
             <WhaleMark className="mx-auto h-12 w-12" />
-            <p className="mt-8 font-mono text-xs uppercase tracking-[0.18em] text-cyan-300">The journey has just begun</p>
+            <p className="mt-8 font-mono text-xs uppercase tracking-[0.18em] text-[#8aa2ff]">The journey has just begun</p>
             <h2 className="mx-auto mt-5 max-w-4xl font-display text-4xl font-semibold leading-[1.08] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl">
               Turning ideas into
               <br />
@@ -373,7 +392,6 @@ export default function Home() {
             </h2>
             <a href="#journey" className="primary-link mx-auto mt-9 w-fit">
               Follow our journey
-              <ArrowUpRight size={16} />
             </a>
           </div>
         </FadeIn>
@@ -391,7 +409,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-2 pt-6 font-mono text-[11px] uppercase tracking-[0.1em] text-slate-700 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Whale. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Whale AI. All rights reserved.</p>
           <p>Build · Test · Learn · Scale</p>
         </div>
       </footer>

@@ -128,7 +128,7 @@ export const updates = [
 
 export const teamMembers = [
   {
-    name: "Team Member 01",
+    name: "김우진",
     role: "AI / Backend / Product",
     description: "AI 분석 구조와 제품 경험, 백엔드 시스템을 함께 설계합니다.",
     focus: ["AI Systems", "Backend", "Product"],
@@ -136,7 +136,7 @@ export const teamMembers = [
     linkedin: null,
   },
   {
-    name: "Team Member 02",
+    name: "송준형",
     role: "Investment Strategy / Quant Research",
     description: "시장 가설과 투자 전략을 데이터로 정의하고 검증합니다.",
     focus: ["Strategy", "Quant", "Research"],
@@ -144,7 +144,7 @@ export const teamMembers = [
     linkedin: null,
   },
   {
-    name: "Team Member 03",
+    name: "정해윤",
     role: "Development / API & Infrastructure",
     description: "데이터 연동과 API, 안정적인 서비스 기반을 구축합니다.",
     focus: ["Development", "API", "Infrastructure"],
@@ -187,4 +187,3 @@ export const roadmap = [
     ],
   },
 ];
-
