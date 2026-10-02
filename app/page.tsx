@@ -53,9 +53,8 @@ export default function Home() {
             <p className="mb-8 font-mono text-xs uppercase tracking-[0.16em] text-slate-500">
               Independent Product Team
             </p>
-            <h1 className="font-display text-[clamp(4.5rem,11.5vw,9rem)] font-semibold leading-[0.82] tracking-[-0.075em] text-white">
-              WHALE
-              <br />
+            <h1 className="whitespace-nowrap font-display text-[clamp(3.3rem,8.5vw,7.5rem)] font-semibold leading-[0.9] tracking-[-0.075em] text-white">
+              WHALE{" "}
               <span className="text-[#6e8dff]">AI</span>
             </h1>
             <p className="mt-10 max-w-xl font-display text-3xl font-medium leading-tight tracking-[-0.035em] text-slate-100 sm:text-5xl">
