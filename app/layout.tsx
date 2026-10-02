@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: {
     default: "Whale AI — We build ideas into real products.",
@@ -11,7 +13,10 @@ export const metadata: Metadata = {
   keywords: ["Whale AI", "AI", "Product Team", "Investment Agent", "Fintech", "Software"],
   authors: [{ name: "Whale AI" }],
   creator: "Whale AI",
-  metadataBase: new URL("https://whale-ai-product-team.b2hg6wj4sd.chatgpt.site"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      "https://whale-ai-product-team.b2hg6wj4sd.chatgpt.site",
+  ),
   alternates: { canonical: "/" },
   openGraph: {
     title: "Whale AI — We build ideas into real products.",
@@ -26,8 +31,8 @@ export const metadata: Metadata = {
     description: "AI와 소프트웨어로 아이디어를 실제 제품으로 만드는 팀.",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${basePath}/favicon.svg`,
+    shortcut: `${basePath}/favicon.svg`,
   },
 };
 
