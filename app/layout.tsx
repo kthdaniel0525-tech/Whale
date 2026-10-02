@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Whale AI — 생각한 것을 끝까지 만듭니다.",
+    default: "Whale AI — We build ideas into real products.",
     template: "%s | Whale AI",
   },
   description:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://whale-ai-product-team.b2hg6wj4sd.chatgpt.site"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Whale AI — 생각한 것을 끝까지 만듭니다.",
+    title: "Whale AI — We build ideas into real products.",
     description: "AI와 소프트웨어로 아이디어를 실제 제품으로 만드는 팀.",
     type: "website",
     locale: "ko_KR",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Whale AI — 생각한 것을 끝까지 만듭니다.",
+    title: "Whale AI — We build ideas into real products.",
     description: "AI와 소프트웨어로 아이디어를 실제 제품으로 만드는 팀.",
   },
   icons: {

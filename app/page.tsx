@@ -58,9 +58,9 @@ export default function Home() {
               <span className="text-[#6e8dff]">AI</span>
             </h1>
             <p className="mt-10 max-w-xl font-display text-3xl font-medium leading-tight tracking-[-0.035em] text-slate-100 sm:text-5xl">
-              생각한 것을,
+              We build ideas into
               <br />
-              끝까지 만듭니다.
+              real products.
             </p>
             <p className="mt-7 max-w-xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8">
               Whale AI는 AI와 소프트웨어로 아이디어를 실제 사람들이 사용할 수 있는 제품으로 만듭니다.
